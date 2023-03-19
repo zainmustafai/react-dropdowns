@@ -1,0 +1,77 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  width: 100%;
+  height: 72px;
+  
+}
+.logo {
+  width: 50px;
+  border-radius: 50%;
+}
+.navlinks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.dropdown {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  z-index: -1;
+  height: 200px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: 50% 0%;
+  box-shadow: 0 40px 60px rgb(0 0 0 / 3%);
+  transition: 0.5s;
+  background-color: #292929;
+}
+
+button:hover, a:hover,
+.dropdown:hover > button {
+  color: #6c63ff;
+}
+
+
+.skills:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    top: 72px;
+  }
+
+
+.slideimage {
+  scale: 1.1;
+}
+.skills {
+  position: relative;
+  height: 72px;
+  display: grid;
+  place-items: center;
+}
+.skills > button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+body .swiper-slide > img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    background: #f4f4fd;
+    padding: 10px;
+    margin-top: 2px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
