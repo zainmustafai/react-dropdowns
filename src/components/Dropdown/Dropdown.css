@@ -32,7 +32,6 @@ nav {
   transform-origin: 50% 0%;
   box-shadow: 0 40px 60px rgb(0 0 0 / 3%);
   transition: 0.5s;
-  background-color: #292929;
 }
 
 button:hover, a:hover,

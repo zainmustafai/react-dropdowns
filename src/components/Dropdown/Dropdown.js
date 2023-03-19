@@ -60,7 +60,7 @@ const slides = [
 const Dropdown = () => {
   return (
     <div className="w-full h-max">
-      <nav className="shadow-sm bg-[#212121] text-[#CCCCCC]">
+      <nav className="shadow-sm">
         <img src={logo} alt="logo" className="logo" />
         <div className="navlinks font-bold ">
           <a href="https://www.github.com/zainmustafai">Portfolio</a>
